@@ -1,5 +1,3 @@
 FROM node:alpine
-RUN apt-get update
-COPY . .
-EXPOSE 4000
-CMD ["echo","hello ubuntu"]
+RUN apt-get -y update
+RUN apt-get -y install nginx
